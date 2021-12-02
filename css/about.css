@@ -3,6 +3,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-family: "Futura PT", sans-serif;
+  font-weight: lighter;
   line-height: 1.5;
 }
 
@@ -139,5 +140,49 @@ nav a:hover {
 
 main {
   margin: 0;
+  padding: 1rem;
   padding-top: 6rem;
+}
+
+h1 {
+  color: #006866;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  color: #006866;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+figure {
+  margin: 0rem;
+}
+
+footer {
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: #f47c20;
+  color: #fff;
+}
+
+h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: .25rem;
+  margin-top: .25rem;
+}
+
+footer p {
+  margin: 0;
 }
