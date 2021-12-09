@@ -83,7 +83,6 @@ header {
 nav {
   position: absolute;
   text-align: right;
-  align-items: right;
   top: 100%;
   left: 0;
   background: #fff;
@@ -110,7 +109,6 @@ nav a {
   width: 100%;
   text-decoration: none;
   font-size: 2rem;
-  align-items: right;
   text-transform: uppercase;
   opacity: 0;
   transition: opacity 150ms ease-in-out;
@@ -123,7 +121,6 @@ nav a:hover {
 .nav-toggle:checked ~ nav {
   transform: scale(1,1);
   width: 100%;
-  align-items: right;
 }
 
 .nav-toggle:checked ~ nav li {
@@ -135,7 +132,6 @@ nav a:hover {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
   font-size: 2rem;
-  align-items: right;
   text-align: right;
 }
 
@@ -314,7 +310,6 @@ img {
     margin-right: 1rem;
     margin-left: 2.5rem;
     text-align: right;
-    align-items: right;
   }
 
   nav a {
