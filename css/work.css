@@ -139,6 +139,14 @@ nav a:hover {
   text-align: right;
 }
 
+.active {
+   border-bottom: solid 3px #006866;
+}
+
+.active:hover {
+  border-color: #f6eade;
+}
+
 main {
   margin: 0;
   padding: 1rem;
@@ -191,11 +199,89 @@ footer p {
 @media only screen and (min-width: 38em) {
 
   html {
-    font-size: 125%;
+    font-size: 115%;
   }
 
   img {
-    width: 50%;
+    width: 100%;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: flex;
+  }
+
+  .mark {
+    width: 3rem;
+  }
+
+  nav {
+    all: unset;
+    display: flex;
+    align-items: flex-end;
+    font-weight: bolder;
+    text-align: right;
+  }
+
+  nav ul {
+    display: flex;
+    position: absolute;
+    top: .5rem;
+    right: 0;
+    margin-right: 1rem;
+    height: 100%;
+    align-items: flex-end;
+  }
+
+  nav li {
+    margin-right: 1rem;
+    margin-left: 2.5rem;
+    text-align: right;
+    align-items: right;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+    margin-right: 0;
+    padding-right: 0;
+    font-size: 1.5rem;
+  }
+
+  section {
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+    grid-template-areas:
+    "figure1 figure2";
+  }
+
+  figure {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: left;
+    display: table;
+  }
+
+  figure img {
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .figure1 {
+    grid-area: figure1;
+    height: 100%;
+  }
+
+  .figure2 {
+    grid-area: figure2;
+    height: 100%;
   }
 
 }
@@ -208,6 +294,11 @@ footer p {
 
   img {
     width: 100%;
+  }
+
+  main {
+    margin: auto;
+    max-width: 50rem;
   }
 
 }

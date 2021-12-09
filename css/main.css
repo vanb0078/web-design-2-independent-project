@@ -139,6 +139,14 @@ nav a:hover {
   text-align: right;
 }
 
+.active {
+  border-bottom: solid 3px #006866;
+}
+
+.active:hover {
+  border-color: #f6eade;
+}
+
 main {
   margin: 0;
   padding-top: 4rem;
@@ -298,7 +306,17 @@ footer p {
   }
 
   .logo img {
-    width: 38rem;
+    max-width: 40rem;
   }
+/*
+  main {
+    grid-column-gap: 2rem;
+  } */
+
+  /* figure {
+    max-width: 25rem;
+    margin: auto;
+    gap: 1rem;
+  } */
 
 }
