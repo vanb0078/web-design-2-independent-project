@@ -30,7 +30,7 @@ header {
 }
 
 .mark {
-  width: 15%;
+  width: 3rem;
 }
 
 .nav-toggle {
@@ -89,6 +89,7 @@ nav {
   background: #fff;
   width: 100%;
   font-size: 2rem;
+  font-weight: bolder;
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
@@ -141,7 +142,7 @@ nav a:hover {
 main {
   margin: 0;
   padding: 1rem;
-  padding-top: 6rem;
+  padding-top: 4rem;
 }
 
 h1 {
@@ -202,19 +203,19 @@ div img {
 }
 
 .email {
-  grid-area: "email";
+  grid-area: email;
 }
 
 .instagram {
-  grid-area: "instagram";
+  grid-area: instagram;
 }
 
 .pinterest {
-  grid-area: "pinterest";
+  grid-area: pinterest;
 }
 
 .etsy {
-  grid-area: "etsy";
+  grid-area: etsy;
 }
 
 footer {
@@ -233,4 +234,28 @@ h3 {
 
 footer p {
   margin: 0;
+}
+
+@media only screen and (min-width: 38em) {
+
+html {
+  font-size: 125%;
+}
+
+img {
+  width: 50%;
+}
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 125%;
+  }
+
+  img {
+    width: 25%;
+  }
+
 }
