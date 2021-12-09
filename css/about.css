@@ -180,6 +180,43 @@ h2 {
   color: #fff;
 }
 
+div img {
+  width: 50%;
+}
+
+.socials {
+  display: grid;
+  grid-template-areas:
+    "email instagram"
+    "pinterest etsy";
+
+  margin-top: 2rem;
+
+  gap: 2rem;
+  align-items: top;
+  text-align: center;
+}
+
+.socials p {
+  color: #006866;
+}
+
+.email {
+  grid-area: "email";
+}
+
+.instagram {
+  grid-area: "instagram";
+}
+
+.pinterest {
+  grid-area: "pinterest";
+}
+
+.etsy {
+  grid-area: "etsy";
+}
+
 footer {
   padding: 1rem;
   margin-top: 2rem;
