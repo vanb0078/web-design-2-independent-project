@@ -5,16 +5,22 @@
   <title>Home</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/nav.css" rel="stylesheet">
   <link href="https://use.typekit.net/uvy2swj.css" rel="stylesheet">
   <link href="favicon.ico" rel="shortcut icon">
   <link rel="icon" type="image/png" href="favicon-196.png">
 </head>
 <body>
 
+  <ul class="skip-links">
+    <li><a href="#nav" tabindex="0">Skip to navigation</a></li>
+    <li><a href="#main" tabindex="0">Skip to main content</a></li>
+  </ul>
+
   <header role="banner">
     <img class="mark" src="images/logo-mark.svg" alt="Melody Elizabeth logo mark">
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <nav role="navigation">
+    <nav role="navigation" id="nav" tabindex="0">
       <ul>
         <li><a href="./index.html" class="active">Home</a></li>
         <li><a href="./work.html">Work</a></li>
@@ -26,22 +32,24 @@
     </label>
   </header>
 
-  <main role="main">
-    <h1 class="logo" aria-label="Melody Elizabeth"><img src="images/logo.svg" alt="" role="presentation"></h1>
-    <figure class="figure1">
-      <img src="images/poster-1.jpg" alt="Image of my work">
-      <figcaption>
-        <p>Check out my work</p>
-        <a href="./work.html">Work</a>
-      </figcaption>
-    </figure>
-    <figure class="figure2">
-      <img src="images/me-cropped.jpg" alt="Image of Melody">
-      <figcaption>
-        <p>Learn more about me</p>
-        <a href="./about.html">About</a>
-      </figcaption>
-    </figure>
+  <main role="main" id="main" tabindex="0">
+    <article>
+      <h1 class="logo" aria-label="Melody Elizabeth"><img src="images/logo.svg" alt="" role="presentation"></h1>
+      <figure class="figure1">
+        <img src="images/poster-1.jpg" alt="Image of my work">
+        <figcaption>
+          <p>Check out my work</p>
+          <a href="./work.html">Work</a>
+        </figcaption>
+      </figure>
+      <figure class="figure2">
+        <img src="images/me-cropped.jpg" alt="Image of Melody">
+        <figcaption>
+          <p>Learn more about me</p>
+          <a href="./about.html">About</a>
+        </figcaption>
+      </figure>
+    </article>
   </main>
 
   <footer role="contentinfo">

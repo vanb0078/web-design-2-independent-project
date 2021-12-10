@@ -5,16 +5,22 @@
   <title>Work</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/work.css" rel="stylesheet">
+  <link href="css/nav.css" rel="stylesheet">
   <link href="https://use.typekit.net/uvy2swj.css" rel="stylesheet">
   <link href="favicon.ico" rel="shortcut icon">
   <link rel="icon" type="image/png" href="favicon-196.png">
 </head>
 <body>
 
+  <ul class="skip-links">
+    <li><a href="#nav" tabindex="0">Skip to navigation</a></li>
+    <li><a href="#main" tabindex="0">Skip to main content</a></li>
+  </ul>
+
   <header role="banner">
     <img class="mark" src="images/logo-mark.svg" alt="Melody Elizabeth logo mark">
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <nav role="navigation">
+    <nav role="navigation" id="nav" tabindex="0">
       <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="./work.html" class="active">Work</a></li>
@@ -26,7 +32,7 @@
     </label>
   </header>
 
-  <main role="main">
+  <main role="main" id="main" tabindex="0">
     <img src="images/poster-3.jpg" alt="Main image of typographic poster">
     <div class="intro">
       <h1 class="title">Type in Time Poster</h1>

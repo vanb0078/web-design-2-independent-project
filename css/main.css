@@ -20,6 +20,25 @@ body {
   padding: 0;
 }
 
+.skip-links a {
+position: absolute;
+top: -3em;
+}
+
+.skip-links {
+visibility: hidden;
+position: absolute;
+}
+
+.skip-links a:focus {
+top: 1em;
+}
+
+.skip-links:focus {
+top: 1em;
+visibility: visible;
+}
+
 header {
   padding: 1rem;
   padding-top: 1.5rem;
@@ -148,7 +167,7 @@ main {
   padding-top: 4rem;
 }
 
-main h1 {
+article h1 {
   background: #00686610;
 }
 
@@ -196,7 +215,7 @@ figcaption a:hover {
 footer {
   padding: 1rem;
   margin-top: 2rem;
-  background-color: #f47c20;
+  background-color: #E56610;
   color: #fff;
 }
 
@@ -234,7 +253,6 @@ footer p {
   }
 
   nav {
-    all: unset;
     display: flex;
     align-items: flex-end;
     font-weight: bolder;
