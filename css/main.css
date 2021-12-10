@@ -21,22 +21,22 @@ body {
 }
 
 .skip-links a {
-position: absolute;
-top: -3em;
+  position: absolute;
+  top: -3em;
 }
 
 .skip-links {
-visibility: hidden;
-position: absolute;
+  visibility: hidden;
+  position: absolute;
 }
 
 .skip-links a:focus {
-top: 1em;
+  top: 1em;
 }
 
 .skip-links:focus {
-top: 1em;
-visibility: visible;
+  top: 1em;
+  visibility: visible;
 }
 
 header {
@@ -53,9 +53,9 @@ header {
 }
 
 .nav-toggle {
-  position: absolute !important;
-  top: -9999px !important;
-  right: -9999px !important;
+  position: absolute;
+  top: -9999px;
+  right: -9999px;
 }
 
 .nav-toggle-label {
@@ -81,7 +81,7 @@ header {
 
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-  content: '';
+  content: "";
   position: absolute;
 }
 
@@ -138,7 +138,7 @@ nav a:hover {
 }
 
 .nav-toggle:checked ~ nav {
-  transform: scale(1,1);
+  transform: scale(1, 1);
   width: 100%;
 }
 
@@ -168,7 +168,7 @@ main {
 }
 
 article h1 {
-  background: #00686610;
+  background: #e3e8e8;
 }
 
 .logo {
@@ -215,8 +215,8 @@ figcaption a:hover {
 footer {
   padding: 1rem;
   margin-top: 2rem;
-  background-color: #E56610;
-  color: #fff;
+  background-color: #e3e8e8;
+  color: #006866;
 }
 
 h2 {
@@ -283,11 +283,11 @@ footer p {
     font-size: 1.5rem;
   }
 
-  main {
+  article {
     display: grid;
     grid-template-areas:
-    "banner banner"
-    "figure1 figure2"
+      "banner banner"
+      "figure1 figure2";
   }
 
   h1 {
@@ -321,15 +321,16 @@ footer p {
   .logo img {
     max-width: 40rem;
   }
-/*
+
+  /*
   main {
-    grid-column-gap: 2rem;
+  grid-column-gap: 2rem;
   } */
 
   /* figure {
-    max-width: 25rem;
-    margin: auto;
-    gap: 1rem;
+  max-width: 25rem;
+  margin: auto;
+  gap: 1rem;
   } */
 
 }
